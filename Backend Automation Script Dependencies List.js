@@ -1,9 +1,4 @@
-// Step: Backend Automation Script Dependencies List
-// Add your code here
-// =======================================================
-//  TATKAL AI — BACKEND BLOCK (Turbotic-safe)
-//  Pure JavaScript — creates backend server + routes
-// =======================================================
+
 
 const fs = require("fs");
 const path = require("path");
@@ -15,10 +10,6 @@ function write(file, content) {
 }
 
 console.log("⚙️ Creating Tatkal Backend Server...");
-
-// =======================================================
-// 1. backend/server.js
-// =======================================================
 write("backend/server.js", `
 const http = require("http");
 const url = require("url");
@@ -96,20 +87,16 @@ const server = http.createServer(async (req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log("🚀 Tatkal Backend Running on PORT", PORT);
+  console.log(" Tatkal Backend Running on PORT", PORT);
 });
 `);
 
-
-// =======================================================
-// 2. backend/routes placeholder (not used, but structured)
-// =======================================================
 write("backend/routes/readme.txt", `
 Optional folder for advanced routing.
 The backend is single-file for hackathon simplicity.
 `);
 
 
-console.log("🎉 Backend Created Successfully!");
-console.log("👉 Run locally:  node backend/server.js");
-console.log("👉 API: http://localhost:5000/health");
+console.log(" Backend Created Successfully!");
+console.log(" Run locally:  node backend/server.js");
+console.log(" API: http://localhost:5000/health");
